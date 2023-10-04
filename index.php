@@ -7,6 +7,9 @@
         <title>Вкусно - и точка</title>
     </head>
     <body>
-        Это тело сайта. Ы.
+        <p>
+            Добро пожаловать, #!
+        </p>
     </body>
 </html>
+<? require_once('buttons.php'); ?>
