@@ -1,4 +1,5 @@
 <?
+    session_start();
     require_once('functions.php');
 ?>
 <!DOCTYPE html>
@@ -11,8 +12,19 @@
     </head>
     <body>
         <pre>
-        <?   
-            var_dump(get_user("78005553535"));
+        <?
+            var_export(get_product(2));
+        ?>
+        <br>
+        <?
+            if (!empty($_SESSION))
+            {
+                var_dump($_SESSION);
+            }
+            else
+            {
+                echo "Пустая сессия!";
+            }
         ?>
         </pre>
     </body>

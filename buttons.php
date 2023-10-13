@@ -16,7 +16,7 @@
     <p>|</p>
     <a href="registration.php">Регистрация</a>
     <p>|</p>
-    <a href="registration.php">Вход</a>
+    <a href="login.php">Вход</a>
 </div>
 <style>
     a, a:visited {
