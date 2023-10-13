@@ -156,26 +156,8 @@
             WHERE
                 category_id = $category
         ");
-        
-        $ingredient = [];
 
-        foreach ($all_products as $key => $elem)
-        {
-            $id = $key + 1;
-            $ingredient = $db->goResult("
-                SELECT
-                    i.name,
-                    i.compound
-                FROM
-                    ingredient i,
-                    ingredient_for_product ifp,
-                    product p
-                WHERE
-                    i.id = ifp.ingredient_id AND p.id = ifp.product_id AND p.id = $id
-            ");
-
-            $elem['ingredient'] = $ingredient;
-        }
+        return $all_products;
     }
 
 ?>
